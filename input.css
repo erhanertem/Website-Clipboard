@@ -12,7 +12,7 @@
 }
 
 .section-content {
-  @apply mx-auto max-w-3xl text-center text-xl leading-9 text-grayishBlue;
+  @apply mx-auto max-w-3xl text-center leading-9 text-grayishBlue;
 }
 
 .section-container {
@@ -25,4 +25,9 @@
 
 .button {
   @apply rounded-full p-4 px-8 shadow-lg duration-200 hover:opacity-80;
+}
+
+.fontIcon:hover {
+  filter: invert(53%) sepia(68%) saturate(434%) hue-rotate(121deg)
+    brightness(101%) contrast(94%);
 }
