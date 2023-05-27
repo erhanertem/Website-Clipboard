@@ -3,15 +3,26 @@
 @tailwind utilities;
 
 @layer base {
-	h3 {
-		@apply mb-8 text-4xl font-bold text-darkGrayishBlue md:text-5xl;
-	}
+  h3 {
+    @apply mb-8 text-4xl font-bold text-darkGrayishBlue md:text-5xl;
+  }
+  h5 {
+    @apply mb-2 text-2xl font-bold text-darkGrayishBlue;
+  }
+}
+
+.section-content {
+  @apply mx-auto max-w-3xl text-center text-xl leading-9 text-grayishBlue;
 }
 
 .section-container {
-	@apply max-w-6xl mx-auto text-center px-10;
+  @apply mx-auto max-w-6xl px-10 text-center;
 }
 
 .button-container {
-	@apply flex flex-col justify-center w-full space-y-6 text-xl text-white md:flex-row md:space-y-0 md:space-x-4;
+  @apply flex w-full flex-col justify-center space-y-6 text-xl text-white md:flex-row md:space-x-4 md:space-y-0;
+}
+
+.button {
+  @apply rounded-full p-4 px-8 shadow-lg duration-200 hover:opacity-80;
 }
